@@ -2,6 +2,6 @@
 Library Management System
 
 Angota Kelompok :
-Hafizh Londata 119140049
-Heksa Dananjaya 119140057
-Gilang Rizky Ramadhan 119140081
+1. Hafizh Londata 119140049 
+2. Heksa Dananjaya 119140057 
+3. Gilang Rizky Ramadhan 119140081
