@@ -9,13 +9,14 @@ def update(request,update_id):
 	akun_update = Barang.objects.get(id=update_id)
 	
 	data = {
-		'librari'	: akun_update.librari,
-		'category'	: akun_update.category,
-		'title'		: akun_update.title,
-		'author'	: akun_update.author,
-		'publisher'	: akun_update.publisher,
-		'year'		: akun_update.year,
-		'copies'	: akun_update.copies,
+		'id_items'		: akun_update.id_items,
+		'id_library'	: akun_update.id_library,
+		'category'		: akun_update.category,
+		'title'			: akun_update.title,
+		'author'		: akun_update.author,
+		'publisher'		: akun_update.publisher,
+		'year'			: akun_update.year,
+		'copies'		: akun_update.copies,
 	}
 	akun_form = BarangForm(request.POST or None, initial=data, instance=akun_update)
 
