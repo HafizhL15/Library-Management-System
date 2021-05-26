@@ -6,9 +6,10 @@ class PeminjamForm(forms.ModelForm):
 	class Meta:
 		model = Peminjam
 		fields =[
-			'subs_id',
+			'subscriber_id',
 			'borrow_date',
-			'item_id',
+			'items_id',
 			'return_date',
 			'fee',
+			
 		]
