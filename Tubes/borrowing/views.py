@@ -4,16 +4,18 @@ from django.shortcuts import render, redirect
 
 from .models import Peminjam
 from .forms import PeminjamForm
+from django.db import connection
+from itertools import chain
 
 def update(request,update_id):
 	akun_update = Peminjam.objects.get(id=update_id)
-	
+
 	data = {
-		'subs_id'		: akun_update.subs_id,
-		'borrow_date'	: akun_update.borrow_date,
-		'item_id'		: akun_update.item_id,
-		'return_id'		: akun_update.return_id,
-		'fee'			: akun_update.fee,
+		'subscriber_id'		: akun_update.subscriber_id,
+		'borrow_date'		: akun_update.borrow_date,
+		'items_id'			: akun_update.items_id,
+		'return_date'		: akun_update.return_date,
+		'fee'				: akun_update.fee,
 	}
 	akun_form = PeminjamForm(request.POST or None, initial=data, instance=akun_update)
 
