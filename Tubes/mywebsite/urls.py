@@ -10,4 +10,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
     url(r'^laporan/', views.laporan),
+    url(r'^pdf_view', views.ViewPDF.as_view()),
+    url(r'^pdf_download', views.DownloadPDF.as_view()),
 ]
