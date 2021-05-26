@@ -9,7 +9,8 @@ def update(request,update_id):
 	akun_update = Perpustakaan.objects.get(id=update_id)
 	
 	data = {
-		'name'		: akun_update.name,
+		'id_library' 	: akun_update.id_library,
+		'name'			: akun_update.name,
 	}
 	akun_form = PerpustakaanForm(request.POST or None, initial=data, instance=akun_update)
 
