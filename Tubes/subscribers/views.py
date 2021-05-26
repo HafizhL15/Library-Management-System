@@ -9,11 +9,12 @@ def update(request,update_id):
 	akun_update = Pelanggan.objects.get(id=update_id)
 	
 	data = {
-		'tipe'		: akun_update.tipe,
-		'name'		: akun_update.name,
-		'address'	: akun_update.address,
-		'phone'		: akun_update.phone,
-		'email'		: akun_update.email,
+		'subscriber_id'	: akun_update.subscriber_id,
+		'tipe'			: akun_update.tipe,
+		'name'			: akun_update.name,
+		'address'		: akun_update.address,
+		'phone'			: akun_update.phone,
+		'email'			: akun_update.email,
 	}
 	akun_form = PelangganForm(request.POST or None, initial=data, instance=akun_update)
 
