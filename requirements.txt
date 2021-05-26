@@ -1,0 +1,8 @@
+REQUIREMENTS PROGRAM
+
+1. django Framework
+2. mysql
+3. python
+4. mysql.connector
+5. django-pre xhtml2pdf
+6. django-staticfiles
