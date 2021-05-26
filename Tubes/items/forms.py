@@ -6,7 +6,8 @@ class BarangForm(forms.ModelForm):
 	class Meta:
 		model = Barang
 		fields =[
-			'librari',
+			'id_items',
+			'id_library',
 			'category',
 			'title',
 			'author',
