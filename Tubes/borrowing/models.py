@@ -1,13 +1,16 @@
 from django.db import models
+from subscribers.models import Pelanggan
+from items.models import Barang
 
 # Create your models here.
 
 class Peminjam(models.Model):
-	subs_id	  		= models.IntegerField(max_length=3)
-	borrow_date 	= models.CharField(max_length=100)
-	item_id			= models.IntegerField(max_length=3)
-	return_date		= models.CharField(max_length=100)
-	fee				= models.IntegerField(max_length=10)
+	id 					= models.IntegerField(primary_key=True)
+	subscriber_id	  	= models.ForeignKey(Pelanggan, on_delete=models.CASCADE)
+	borrow_date 		= models.DateField(max_length=20)
+	items_id			= models.ForeignKey(Barang, on_delete=models.CASCADE)
+	return_date			= models.DateField(max_length=20, blank=True, null=True)
+	fee					= models.IntegerField(blank=True, null=True)
 
 	def __str__(self):
-		return "{}.{}".format(self.id,self.subs_id)
+		return "{}".format(self.subscriber_id)
