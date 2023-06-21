@@ -1,7 +1,8 @@
-# TugasBesar-PBO-CrossoverProject
-Library Management System
+# Library Management System
 
-Angota Kelompok :
-1. Hafizh Londata 119140049 
-2. Heksa Dananjaya 119140057 
-3. Gilang Rizky Ramadhan 119140081
+Sebuah sistem informasi manajemen perpustakaan yang dapat melakukan pengelolaan data terhadap barang barang perpustakaan dan melakukan peminjaman oleh pengguna
+Fitur - Fitur:
+1. Menampilkan, Menambah, dan Mengedit Data Barang Perpustakaan
+2. Menampilkan, Menambah, dan Mengedit Data Peminjaman Buku
+3. Registrasi Pengguna Baru
+4. Laporan Peminjaman Buku
